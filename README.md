@@ -93,7 +93,20 @@ There are many real-life applications of Hierarchical clustering. They include:
   [click there to find Code of  Hierarchical Clustering clustering](https://github.com/AlaaSayed164/Unsupervised-ML/blob/main/Hierarchical%20Clustering_Lab.ipynb)
 
  ## 3. Apply previous Algorithms on Credit Card Fraud Detection Dataset  :
- 
- 1. we started by cleanning  dataset :
+  we started by cleaning the dataset :
+  1. drop unuseful column 
+  2. . show the histogram and boxplot of each column
+  3. find the median of each column and fill null 
+  4. use MinMaxScaler.
+  5. use KElbowVisualizer with kmean to try many k then find the best K.
+  6. try a different number of PCA and at the same time find the best K of kmean using KElbowVisualizer also use silhouette_score to find the best (K and PCA) .
+  7. In this case, we find that the best PCA is 2 (n_components=2)
+        Dbscan:Estimated clusters for eps= 0.12 and min_samples= 5 that silhouette_avg = 0.3003759133014986
+        kmean: number of cluster is: 5 and the silhouette_avg is: 0.5511746395984805
+        AgglomerativeClustering_Hierarchical number of k is : 2 and silhouette_avg: 0.5703360929917662
+        gmm: number of cluster is: 2 and the silhouette_avg is: 0.41893936822121497
 
->>this was ower own project for  you can finded here https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
+  [click there to find Code of  Hierarchical Clustering clustering](https://github.com/AlaaSayed164/Unsupervised-ML/blob/main/cc%20General%20Project%20Using%20PCA.ipynb)
+
+
+
